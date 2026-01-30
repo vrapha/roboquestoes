@@ -1,0 +1,48 @@
+Testing Q14 --------------------------------------------------
+
+--- PROCESSING BLOCK ---
+Original Block:
+'14. SES-DF 2022 ACESSO DIRETO. Uma paciente de 30 anos de idade, nuligesta, parou de usar anticoncepcional hormonal \nhá sete meses para tentar engravidar. Relata aumento da dismenorreia no período, intensidade 8 em 10, que inicia 01 \ndia antes e dura 5 dias da menstruação, aliviada parcialmente com analgésicos comuns, associada a dispareunia. Ao \nexame físico, tem dor à mobilização do colo uterino, com mobilidade do útero reduzida e espessamento bilateral de \nligamentos uterossacros. Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue o item a \nseguir. Como a paciente está tentando gestar há menos de um ano, não há indicação de prosseguir com a investigação. \nA. CERTO. \nB. ERRADO.'
+Text after header removal:
+'Uma paciente de 30 anos de idade, nuligesta, parou de usar anticoncepcional hormonal \nhá sete meses para tentar engravidar. Relata aumento da dismenorreia no período, intensidade 8 em 10, que inicia 01 \ndia antes e dura 5 dias da menstruação, aliviada parcialmente com analgésicos comuns, associada a dispareunia. Ao \nexame físico, tem dor à mobilização do colo uterino, com mobilidade do útero reduzida e espessamento bilateral de \nligamentos uterossacros. Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue o item a \nseguir. Como a paciente está tentando gestar há menos de um ano, não há indicação de prosseguir com a investigação. \nA. CERTO. \nB. ERRADO.'
+MATCH STRATEGY 1 (NewLine): Found at index 661
+Matched group: 
+A. 
+Enunciado Final chars: ' com a investigação.'
+Texto Alts chars: 'A. CERTO. \nB. ERRADO.'...
+    [EXTRACT_ALTS] Input text len: 21
+    [EXTRACT_ALTS] First 50 chars: 'A. CERTO. \nB. ERRADO.'
+    [EXTRACT_ALTS] Splitting with pattern: (?:(?:\r?\n)|(?:\s+))([A-E])[\)\.]\s+|(?:(?:\r?\n)|(?:\s+))([A-E])\s*-\s*
+    [EXTRACT_ALTS] Split parts count: 4
+      Part 0: 'A. CERTO.'
+      Part 1: 'B'
+      Part 3: 'ERRADO.'
+Final Alternatives: {'B': 'ERRADO'}
+
+Testing Q6 ---------------------------------------------------
+
+--- PROCESSING BLOCK ---
+Original Block:
+'6. UERJ-RJ 2024 ACESSO DIRETO. Mulher de 30 anos, sem comorbidades, com duas gestações anteriores e laqueadura \ntubária há um ano, comparece à UBS com queixa de dismenorreia intensa há dez anos, sendo tratada regularmente \ncom analgésicos. O exame ginecológico é normal, mas a ressonância nuclear magnética de pelve demonstra \nespessamento de ligamento uterossacro direito, sugestivo de endometriose. O tratamento de escolha à paciente é: \n \n\n \n A. Dienogeste contínuo. \n A. Histerectomia simples. \n B. Ooforectomia bilateral. \n C. Agonista do GnRH isolado.'
+Text after header removal:
+'Mulher de 30 anos, sem comorbidades, com duas gestações anteriores e laqueadura \ntubária há um ano, comparece à UBS com queixa de dismenorreia intensa há dez anos, sendo tratada regularmente \ncom analgésicos. O exame ginecológico é normal, mas a ressonância nuclear magnética de pelve demonstra \nespessamento de ligamento uterossacro direito, sugestivo de endometriose. O tratamento de escolha à paciente é: \n \n\n \n A. Dienogeste contínuo. \n A. Histerectomia simples. \n B. Ooforectomia bilateral. \n C. Agonista do GnRH isolado.'
+MATCH STRATEGY 1 (NewLine): Found at index 408
+Matched group: 
+ 
+
+ 
+ A. 
+Enunciado Final chars: 'scolha à paciente é:'
+Texto Alts chars: 'A. Dienogeste contínuo. \n A. Histerectomia simples'...
+    [EXTRACT_ALTS] Input text len: 111
+    [EXTRACT_ALTS] First 50 chars: 'A. Dienogeste contínuo. \n A. Histerectomia simples'
+    [EXTRACT_ALTS] Splitting with pattern: (?:(?:\r?\n)|(?:\s+))([A-E])[\)\.]\s+|(?:(?:\r?\n)|(?:\s+))([A-E])\s*-\s*
+    [EXTRACT_ALTS] Split parts count: 10
+      Part 0: 'A. Dienogeste contínuo.'
+      Part 1: 'A'
+      Part 3: 'Histerectomia simples.'
+      Part 4: 'B'
+      Part 6: 'Ooforectomia bilateral.'
+      Part 7: 'C'
+      Part 9: 'Agonista do GnRH isolado.'
+Final Alternatives: {'A': 'Histerectomia simples.', 'B': 'Ooforectomia bilateral.', 'C': 'Agonista do GnRH isolado.'}

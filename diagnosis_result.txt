@@ -1,0 +1,40 @@
+✅ Successfully imported robo_pdf_para_codigos (REAL CODE ON DISK)
+
+
+📊 TESTING Q14 Extraction:
+
+    📦 RAW BLOCK Q14 (len=714):
+'14. SES-DF 2022 ACESSO DIRETO. Uma paciente de 30 anos de idade, nuligesta, parou de usar anticoncepcional hormonal \nhá sete meses para tentar engravidar. Relata aumento da dismenorreia no período, intensidade 8 em 10, que inicia 01 \ndia antes e dura 5 dias da menstruação, aliviada parcialmente com analgésicos comuns, associada a dispareunia. Ao \nexame físico, tem dor à mobilização do colo uterino, com mobilidade do útero reduzida e espessamento bilateral de \nligamentos uterossacros. Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue o item a \nseguir. Como a paciente está tentando gestar há menos de um ano, não há indicação de prosseguir com a investigação. \nA. CERTO. \nB. ERRADO.'
+    🧩 DEBUG SPLIT Q14:
+       Split Index: 661
+       Enunciado End: 'prosseguir com a investigação.'
+       Alts Start (adjusted): '\nA. CERTO. \nB. ERRADO.'
+
+    📋 DEBUG PARSING Q14:
+       Tipo: ACESSO_DIRETO
+       Alternativas extraídas: 2 → ['A', 'B']
+       Enunciado: Uma paciente de 30 anos de idade, nuligesta, parou de usar anticoncepcional hormonal há sete meses para tentar engravidar. Relata aumento da dismenorr...
+   Enunciado Len: 655
+   Enunciado Last 50: 'não há indicação de prosseguir com a investigação.'
+   Alternatives Found: ['A', 'B']
+   Alternatives Content: {'A': 'CERTO', 'B': 'ERRADO'}
+
+
+📊 TESTING Q6 Extraction:
+
+    📦 RAW BLOCK Q6 (len=557):
+'6. UERJ-RJ 2024 ACESSO DIRETO. Mulher de 30 anos, sem comorbidades, com duas gestações anteriores e laqueadura \ntubária há um ano, comparece à UBS com queixa de dismenorreia intensa há dez anos, sendo tratada regularmente \ncom analgésicos. O exame ginecológico é normal, mas a ressonância nuclear magnética de pelve demonstra \nespessamento de ligamento uterossacro direito, sugestivo de endometriose. O tratamento de escolha à paciente é: \n \n\n \n A. Dienogeste contínuo. \n A. Histerectomia simples. \n B. Ooforectomia bilateral. \n C. Agonista do GnRH isolado.'
+    🧩 DEBUG SPLIT Q6:
+       Split Index: 408
+       Enunciado End: 'mento de escolha à paciente é:'
+       Alts Start (adjusted): '\nA. Dienogeste contínuo. \n A. '
+      Reallocating duplicate A -> B for content 'Histerectomia s...'
+
+    📋 DEBUG PARSING Q6:
+       Tipo: ACESSO_DIRETO
+       Alternativas extraídas: 4 → ['A', 'B', 'C', 'D']
+       Enunciado: Mulher de 30 anos, sem comorbidades, com duas gestações anteriores e laqueadura tubária há um ano, comparece à UBS com queixa de dismenorreia intensa ...
+   Enunciado Len: 404
+   Enunciado Last 50: 'ndometriose. O tratamento de escolha à paciente é:'
+   Alternatives Found: ['A', 'B', 'C', 'D']
+   Alternatives Content: {'A': 'Dienogeste contínuo.', 'B': 'Histerectomia simples.', 'C': 'Ooforectomia bilateral.', 'D': 'Agonista do GnRH isolado.'}
